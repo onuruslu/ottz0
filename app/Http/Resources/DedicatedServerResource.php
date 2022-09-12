@@ -25,7 +25,7 @@ class DedicatedServerResource extends JsonResource
             'storage_line_2' => $this->storage_line_2,
             'data' => $this->data,
             'benchmark' => $this->benchmark,
-            'product' => ProductResourceCollection::make($this->whenLoaded('product')),
+            'product' => ProductResource::make($this->whenLoaded('product')),
         ];
     }
 }
