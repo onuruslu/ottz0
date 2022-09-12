@@ -9,6 +9,6 @@ class TestController extends Controller
 {
     public function __invoke()
     {
-        return ProductCollection::make(Product::get());
+        return ProductCollection::make(Product::with('dedicated_servers')->get());
     }
 }
